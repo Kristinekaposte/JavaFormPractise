@@ -1,5 +1,4 @@
 package com.example.javaformpractice;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,12 +7,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
 import java.io.IOException;
-import java.util.Random;
 
 public class KnightController {
 private Stage stage;
@@ -26,18 +24,34 @@ private Stage stage;
 
     @FXML
     private Button startButton;
+    @FXML
+    private Button mainExitButton;
 
     Alert alert;
     BlackKnight blackKnight;
-
+    Parent root;
+    Scene scene;
 
     @FXML
-    void CreateKnightButton(ActionEvent event) {
+    void mainExitButtonClicked(ActionEvent event) {
+        //Calls window with messages to confirm exit process
+        alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Exit");
+        alert.setHeaderText("You are about to Exit!");
+        alert.setContentText("Do you really want to Exit?");
+        //After pressing ok executes next code line inside of if statement allowing to exit
+        if(alert.showAndWait().get()== ButtonType.OK){
+            System.out.println("you have logged out");
+            stage.close();
+        }
 
+    }
+
+    @FXML
+    void CreateKnightButton(ActionEvent event) throws IOException{
         blackKnight = new BlackKnight(knightNameTextInput.getText());
       //  knightNameText.getText(); // empty one will not change name bar text.      //nameTextInput.getText()   - this will change Name bar to user input string
         BlackKnight.allKnights[0]=blackKnight;
-
 
         if (knightNameTextInput.getText().isEmpty()){
             alert = new Alert(Alert.AlertType.ERROR);
@@ -50,16 +64,21 @@ private Stage stage;
             alert.show();
         }
     }
-        public String getKnight(){
-        return knightNameTextInput.getText().toString();
-        }
 
     public void StartButtonClicked(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(KnightApplication.class.getResource("knight-strike.fxml")); //com.example.javaformpractice.blackKnight.
+        String knightName = knightNameTextInput.getText(); // will store our text found within our knightNameTextInput into string variable that we can use
+
+        // create FXML loader instance
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("knight-strike.fxml"));
+        root=loader.load();
+
+        ActionController actionController= loader.getController();
+        actionController.displayLabelName(knightName);
+
+
+     //   FXMLLoader fxmlLoader = new FXMLLoader(KnightApplication.class.getResource("knight-strike.fxml")); //com.example.javaformpractice.blackKnight.
         stage= (Stage)((Node)event.getSource()).getScene().getWindow();
-
-
-        Scene scene = new Scene(fxmlLoader.load());
+        scene = new Scene(root);
         stage.setTitle(" Strike the BlackKnight !");
 
 
@@ -68,29 +87,14 @@ private Stage stage;
             alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("FIRST CREATE KNIGHT!");
             alert.show();
+
         }else {
             alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setContentText("knight has been made, you can start game");
+            alert.setContentText("Game has been successfully made, good luck");
             alert.show();
-            stage.setScene(scene); //  creates and allows to cont to next sceene if name is provided
+            stage.setScene(scene); //  creates and allows to continue to next scene if name is provided
             stage.show();
+
         }
     }
-//    @FXML
-//    void StartButtonClicked(ActionEvent event) {
-//
-//        if (knightNameTextInput.getText().isEmpty()){
-//            alert = new Alert(Alert.AlertType.ERROR);
-//            alert.setContentText("FIRST CREATE KNIGHT!");
-//            alert.show();
-//        }else {
-//            alert = new Alert(Alert.AlertType.INFORMATION);
-//            alert.setContentText("knight is already made, you can start game");
-//            alert.show();
-//
-//        }
-//
-//    }
-
-
 }

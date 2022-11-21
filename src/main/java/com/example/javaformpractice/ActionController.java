@@ -5,15 +5,48 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.util.Arrays;
 
 public class ActionController {
     Alert alert;
-    BlackKnight blackKnight;
 
+    BlackKnight blackKnight;
+    Stage stage;
+    @FXML
+    private Label nameLabelId;
     @FXML
     private Button strikeButtonText;
+    @FXML
+    private Button exitButton;
+    @FXML
+    private AnchorPane strikePane;
+
+    @FXML
+    void exitButtonClicked(ActionEvent event) {
+  //Calls window with messages to confirm exit process
+        alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Exit");
+        alert.setHeaderText("You are about to Exit!");
+        alert.setContentText("Do you really want to Exit?");
+ //After pressing ok executes next code line inside of if statement allowing to exit
+            if(alert.showAndWait().get()== ButtonType.OK){
+                //closes the window
+                stage = (Stage) strikePane.getScene().getWindow();
+                System.out.println("you have logged out");
+                stage.close();
+            }
+
+    }
+
+
+    public void displayLabelName (String knightName){
+        nameLabelId.setText("Hello:" + knightName);
+    }
 
     @FXML
     void strikeButtonClicked(ActionEvent event) {
@@ -29,19 +62,6 @@ public class ActionController {
             alert.setContentText("STRIKE!, stats left: " + allKnight);
             alert.show();
 //       }else{
-//
-//
-//            Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
-//            alert1.setContentText("knight is no longer alive");
-//            alert1.show();
-//       }
-
-            //  System.out.println("Your knight is : "+  knightController);
-            //   System.out.println("Your knight stats: "+allKnight);
-
-            //  System.out.println(" after strike:  "+allKnight.toString());
-
-
 
     }
 }
