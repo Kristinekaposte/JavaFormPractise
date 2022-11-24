@@ -13,7 +13,7 @@ public class BeingApplication extends Application {
             // create scene to set fxml into
             Scene scene = new Scene(fxmlLoader.load());
             // set title of stage
-            stage.setTitle("Feeding simulator");
+            stage.setTitle("FEEDING SIMULATOR");
             //set created scene into stage
             stage.setScene(scene);
             //show stage

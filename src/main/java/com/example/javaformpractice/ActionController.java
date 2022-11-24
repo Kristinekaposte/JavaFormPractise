@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 public class ActionController {
@@ -27,7 +28,7 @@ public class ActionController {
     private AnchorPane strikePane;
 
     @FXML
-    void exitButtonClicked(ActionEvent event) {
+    void exitButtonClicked(ActionEvent event)  {
   //Calls window with messages to confirm exit process
         alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Exit");

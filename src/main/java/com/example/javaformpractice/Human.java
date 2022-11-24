@@ -2,18 +2,16 @@ package com.example.javaformpractice;
 
 public class Human extends Being{
     private boolean hungry=true;
-    private static int maxFeedTimes=0;
+    private int maxFeedTimes=0;
 
     public Human (){
         super();
         this.maxFeedTimes=3;
-
     }
-
-    public void feedThem(){
+    private void feedThem(){
          this.maxFeedTimes--;
     }
-    boolean isHungry(){
+   public boolean isHungry(){
         return this.hungry;
     }
 @Override
@@ -35,7 +33,7 @@ public class Human extends Being{
     public void relieveTheBeing(){
             this.maxFeedTimes=3;
             this.hungry=true;
-            System.out.println("you can eat again :)");
+            System.out.println("You can eat again :)");
         }
 
 
