@@ -1,20 +1,26 @@
 package com.example.javaformpractice;
 
 public class Being implements IBeing {
-    private  int timesFed=0;
-    private  int maxFeedTimes=0;
-    Human human;
-   public Being (Human human){
+  //  private  int timesFed=0;
+  //  private  int maxFeedTimes=0;
+    Human human; // object
+    Alien alien; // object
+   public Being (Human human){ // Constructor
      this.human=human;
     }
-    public Being (){
+    public Being (Alien alien){// Constructor
+        this.alien=alien;
+    }
+    public Being (){ // Constructor
 
     }
     @Override
     public void feedTheBeing(){
 
     }
+    public void relieveTheBeing(){
 
+    }
     @Override
     public String toString() {
     return null;
@@ -25,7 +31,7 @@ public class Being implements IBeing {
         being.human.feedTheBeing();
         being.human.feedTheBeing();
         being.human.feedTheBeing();
-        being.human.feedTheBeing();
+      //  being.human.feedTheBeing();
         System.out.println(being.human.toString());
 
     //  System.out.println(being.human.toString());

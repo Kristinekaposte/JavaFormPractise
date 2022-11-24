@@ -5,4 +5,5 @@ public interface IBeing {
 
     void feedTheBeing();
 
+    void relieveTheBeing();
 }

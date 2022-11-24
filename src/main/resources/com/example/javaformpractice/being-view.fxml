@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.javaformpractice.BeingController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane cache="true" prefHeight="648.0" prefWidth="906.0" style="-fx-background-color: AZURE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaformpractice.BeingController">
+   <children>
+      <RadioButton fx:id="alienRButton" layoutX="42.0" layoutY="234.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="140.0" text="Alien">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="being" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="humanRButton" layoutX="42.0" layoutY="158.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="154.0" text="Human" toggleGroup="$being">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Text fill="#073fe5" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose one to feed:" textAlignment="CENTER" wrappingWidth="420.20006704330444">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Button fx:id="feedButton" layoutX="24.0" layoutY="463.0" mnemonicParsing="false" onAction="#feedButtonClicked" prefHeight="69.0" prefWidth="140.0" text="Feed!" textFill="#00ae11">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textAreaID" cache="true" editable="false" layoutX="424.0" prefHeight="337.0" prefWidth="482.0" promptText="Stats:" style="-fx-background-color: RED;">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextArea>
+      <Label fx:id="myLableID" alignment="TOP_LEFT" layoutX="423.0" layoutY="334.0" prefHeight="314.0" prefWidth="482.0" style="-fx-background-color: POWDERBLUE;" text="Stats:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="relieveButton" layoutX="196.0" layoutY="463.0" mnemonicParsing="false" onAction="#relieveButtonClicked" prefHeight="73.0" prefWidth="172.0" text="Relieve" textFill="#de2a09">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

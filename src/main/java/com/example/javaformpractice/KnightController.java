@@ -57,6 +57,8 @@ private Stage stage;
             alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Error you need to fill name field");
             alert.show();
+
+
         } else {
             alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Knight created: "+'\n'+"NAME: "+knightNameTextInput.getText()+

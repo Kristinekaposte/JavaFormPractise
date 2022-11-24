@@ -9,11 +9,11 @@ public class BeingApplication extends Application {
         @Override
         public void start(Stage stage) throws IOException {
             //we create fxml loader and load fxml file
-            FXMLLoader fxmlLoader = new FXMLLoader(com.example.javaformpractice.HelloApplication.class.getResource("being-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(BeingApplication.class.getResource("being-view.fxml"));
             // create scene to set fxml into
             Scene scene = new Scene(fxmlLoader.load());
             // set title of stage
-            stage.setTitle("User Data!");
+            stage.setTitle("Feeding simulator");
             //set created scene into stage
             stage.setScene(scene);
             //show stage
