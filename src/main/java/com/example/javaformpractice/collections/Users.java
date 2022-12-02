@@ -7,7 +7,6 @@ public class Users  implements Comparable<Users>{
     private String name;
     private double balance=0;
     private double spend=0;
-    Products products;
     public Users(){
     }
     public Users(String name, double balance) {
@@ -21,7 +20,7 @@ public class Users  implements Comparable<Users>{
     public double getBalance() {
         return balance;
     }
-    public double getSales() {
+    public double getSpend() {
        return spend;
     }
     public void buy(Products products){
@@ -43,13 +42,13 @@ public class Users  implements Comparable<Users>{
         if (compare == 0 ) {
             compare = Double.compare(balance, users.getBalance());}
         if (compare == 0 ) {
-            compare = Double.compare(spend, users.getSales());}
+            compare = Double.compare(spend, users.getSpend());}
         return compare;
     }
 
     public static void main(String[] args) {
 //create users object
-        Users user1 = new Users("ronald", 200);
+        Users user1 = new Users("Ronald", 200);
         Users user2 = new Users("roaald", 100);
         Users user3 = new Users("Arnold", 300);
 //adds users in list
@@ -57,21 +56,20 @@ public class Users  implements Comparable<Users>{
         myUsers.add(user1);
         myUsers.add(user2);
         myUsers.add(user3);
+
+System.out.println("______________________ORIGINAL USERS LIST___________________");
 //Print out NEW USERS lIST
         System.out.println("Users list: "+myUsers.toString());
 //CREATE PRODUCTS LIST
         List<Products> myProducts =new ArrayList<>();
-        myProducts.add(new Products("kiwi",1.0));
-        myProducts.add(new Products("apple",6.0));
-        myProducts.add(new Products("plums",3.0));
+        myProducts.add(new Products("Kiwi",1.0));
+        myProducts.add(new Products("Apple",6.0));
+        myProducts.add(new Products("Plums",3.0));
         myProducts.add(new Products("Oranges",5.99));
+System.out.println("______________________PRODUCTS LIST_________________________");
         System.out.println("Products list: "+myProducts.toString());
-//PRINT OUT ALL PRODUCTS WIT FOREACH
-//     for (Products  p: myProducts){
-//         System.out.println(p.getProductsName()+" "+ p.getPrice());
-//     }
-//____________________________________________________________________________________________
-System.out.println("____________________________________________________________");
+
+System.out.println("______________________After Buying something________________");
 // SET USER FROM myUsers LIST TO buy some product from list using index
         myUsers.get(0).buy(myProducts.get(0));
         myUsers.get(0).buy(myProducts.get(1));
@@ -81,13 +79,7 @@ System.out.println("____________________________________________________________
 //print out changes on user list, after buying
         System.out.println(myUsers.toString());
 
-
-
-
-     //   System.out.println("User 1 sales "+user1.getSales());
-
-
-
+     //   System.out.println("User 1 sales "+user1.getSpend());
 
 
 System.out.println("________________________Sorting_____________________________");
@@ -98,11 +90,12 @@ System.out.println("________________________Sorting_____________________________
 //SORT BY ONE WHO HAS BOUGHT THE MOST
 
 //SORT BY MOST MONEY SPEND HIGH-MIN (DESC)
-        Comparator<Users> reverseUserSpendList= Collections.reverseOrder(Comparator.comparingDouble(Users::getSales));
+     //   Collections.reverseOrder(Comparator.comparingDouble(Users::getSpend)); //  alone this line only reverses names NOT SPEND PARAMETERS
+        Comparator<Users> reverseUserSpendList= Collections.reverseOrder(Comparator.comparingDouble(Users::getSpend));
         Collections.sort(myUsers,reverseUserSpendList);
 //PRINTS OUT SORTED LISTS
         for (Object u : myUsers) {
-            System.out.println(u.toString());
+            System.out.print(u.toString());
         }
     }
 }

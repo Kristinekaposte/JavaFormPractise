@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a620d5-4c00-4cd6-983a-4f164a7b35a9" name="Changes" comment="5th commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/DeadKnightException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CarType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsMaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsMaps2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/exceptions/ExceptionsPractise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/exceptions/IllegalAddressException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/exceptions/SdaException.java" afterDir="false" />
+    <list default="true" id="27a620d5-4c00-4cd6-983a-4f164a7b35a9" name="Changes" comment="6th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/ActionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/ActionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Alien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BlackKnight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BlackKnight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/KnightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/KnightController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669313287464</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="6th commit">
+      <created>1669991664192</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669991664192</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +200,7 @@
     <MESSAGE value="3th commit" />
     <MESSAGE value="4th commit" />
     <MESSAGE value="5th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="5th commit" />
+    <MESSAGE value="6th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="6th commit" />
   </component>
 </project>

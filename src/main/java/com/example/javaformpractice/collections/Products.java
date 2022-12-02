@@ -1,10 +1,13 @@
 package com.example.javaformpractice.collections;
 
+import javafx.util.converter.CurrencyStringConverter;
+
+import java.util.Currency;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Products extends Users {
+public class Products extends Users{
     private Double price;
     private String productsName;
     List<Products> myProducts;
