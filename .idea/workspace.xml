@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a620d5-4c00-4cd6-983a-4f164a7b35a9" name="Changes" comment="4th commit">
+    <list default="true" id="27a620d5-4c00-4cd6-983a-4f164a7b35a9" name="Changes" comment="5th commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/DeadKnightException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CarType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsMaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsMaps2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/exceptions/ExceptionsPractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/exceptions/IllegalAddressException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/exceptions/SdaException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/ActionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/ActionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Alien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BeingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BeingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BeingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BeingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BlackKnight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/BlackKnight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javaformpractice/being-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javaformpractice/being-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/KnightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/KnightController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +36,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,13 +71,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BeingApplication">
-    <configuration name="Alien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.Alien" />
+  <component name="RunManager" selected="Application.Users">
+    <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.Car" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Being" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.Being" />
+    <configuration name="CollectionExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.CollectionExamples" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.BeingApplication" />
+    <configuration name="CollectionsMaps2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.CollectionsMaps2" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Human" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.Human" />
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.User" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Triangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.shapes.Triangle" />
+    <configuration name="Users" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.Users" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.shapes.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BeingApplication" />
-        <item itemvalue="Application.Human" />
-        <item itemvalue="Application.Alien" />
-        <item itemvalue="Application.Being" />
-        <item itemvalue="Application.Triangle" />
+        <item itemvalue="Application.Users" />
+        <item itemvalue="Application.CollectionExamples" />
+        <item itemvalue="Application.User" />
+        <item itemvalue="Application.CollectionsMaps2" />
+        <item itemvalue="Application.Car" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669299328957</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5th commit">
+      <created>1669313287464</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669313287464</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +210,7 @@
     <MESSAGE value="2th commit" />
     <MESSAGE value="3th commit" />
     <MESSAGE value="4th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
+    <MESSAGE value="5th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="5th commit" />
   </component>
 </project>

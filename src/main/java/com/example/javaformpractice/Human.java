@@ -1,34 +1,32 @@
 package com.example.javaformpractice;
 
-public class Human extends Being{
-    private boolean hungry=true;
-    private int maxFeedTimes=0;
+public class Human extends Being {
+    private boolean hungry = true;
+    private int maxFeedTimes = 0;
 
-    public Human (){
+    public Human() {
         super();
-        this.maxFeedTimes=3;
+        this.maxFeedTimes = 3;
     }
-    private void feedThem(){
-         this.maxFeedTimes--;
+
+    private void feedThem() {
+        this.maxFeedTimes--;
     }
-   public boolean isHungry(){
+
+    public boolean isHungry() {
         return this.hungry;
     }
-@Override
+
+    @Override
     public void feedTheBeing() {
-    if (this.maxFeedTimes >1) {
-        feedThem();
-    //    System.out.println("Human Has been fed " +" Hungry: "+ this.hungry);
-    } else if (this.maxFeedTimes == 1) {
+        if (this.maxFeedTimes > 0) {
             feedThem();
-       //     System.out.println("Human Has been fed for last time" + "\n" + "Further feeding will lead to toilet " + " Hungry: "+this.hungry);
-
-        } else{
+        }else {
             this.hungry = false;
-
-       //     System.out.println("You need to go to potty " + " Hungry: "+this.hungry);
         }
     }
+
+
 @Override
     public void relieveTheBeing(){
             this.maxFeedTimes=3;

@@ -17,16 +17,10 @@ public class Alien extends Being{
     }
     @Override
     public void feedTheBeing() {
-        if (this.maxFeedTimes >1) {
+        if (this.maxFeedTimes > 0) {
             feedThem();
-            //    System.out.println("Alien Has been fed " +" Hungry: "+ this.hungry);
-        } else if (this.maxFeedTimes == 1) {
-            feedThem();
-            //     System.out.println(" Alien Has been fed for last time" + "\n" + "Further feeding will lead to wc " + " Hungry: "+this.hungry);
-
-        } else{
+        }else {
             this.hungry = false;
-            //     System.out.println("You need to go to potty " + " Hungry: "+this.hungry);
         }
     }
 
