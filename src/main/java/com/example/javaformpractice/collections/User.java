@@ -3,6 +3,8 @@ package com.example.javaformpractice.collections;
 import com.example.javaformpractice.BlackKnight;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class User implements Comparable<User> {
     private String firstName;
@@ -60,59 +62,89 @@ public class User implements Comparable<User> {
 
     public static void main(String[] args) {
         User user1 = new User("John", "Smith", 20, 165);
-        User user2 = new User("John", "Smith", 20, 150);
+        User user2 = new User("John", "Bravo", 20, 150);
       //  User user2 = new User("John", "Bravo", 21, 166);
-     //   User user3 = new User("Adam", "Smith", 63, 170);
+        User user3 = new User("Adam", "Smith", 63, 170);
 
-        List mylist = new ArrayList();
-        mylist.add(user1);
-        mylist.add(user2);
-     //   mylist.add(user3);
 
-        System.out.println("---------Unsorted--------------------");
-        System.out.println(mylist.toString());
-        System.out.println("-----------------------------");
-        Collections.sort(mylist);
+        List<User> mylist = Arrays.asList(new User("John", "Smith", 20, 165),
+                                          new User("Jhn", "Smith", 20, 165),
+                                          new User("kim", "Bravo", 20, 165),
+                                          new User("kim", "Zravo", 20, 165));
 
-//        System.out.println(mylist.toString());
-//        System.out.println("-----------------------------");
-      //  System.out.println(user1.compareTo(user2));
-        for (Object myUser : mylist) {
-            System.out.println(myUser.toString());
+//        mylist.add(user1);
+//        mylist.add(user2);
+//        mylist.add(user3);
+
+
+        Map<String,List<User>> mymap = new HashMap<>();
+        for (User user:mylist) {
+            String nameKey = user.getFirstName();
+
+            if(mymap.containsKey(nameKey)){
+                List<User> nameUsers = mymap.get(nameKey);
+                nameUsers.add(user);
+                mymap.put(nameKey,nameUsers);
+            }else{
+                List<User>newNameUsers =new ArrayList<>();
+                newNameUsers.add(user);
+                mymap.put(nameKey,newNameUsers);
+            }
         }
 
 
+                for (Map.Entry<String, List<User>> entry: mymap.entrySet()) {
+          System.out.println(entry.getKey()+" "+entry.getValue());
+       }
+
+
+        Box<Integer> box =new Box();
+
+        Box intBox = new Box<Integer>();
+        MetalBox<Integer>metalBox = new MetalBox<>();
+     //   metalBox.setItem(1);
+
+//        System.out.println("---------Unsorted--------------------");
+//        System.out.println(mylist.toString());
+//        System.out.println("-----------------------------");
+//        Collections.sort(mylist);
+//
+//        System.out.println(mylist.toString());
+//        System.out.println("-----------------------------");
+//        System.out.println(user1.compareTo(user2));
+//        for (Object myUser : mylist) {
+//            System.out.println(myUser.toString());
+//        }
 
 
 
 
 
-
-    int result = Arrays.binarySearch(new int[]{1,2,5,7,16},7); // best works with sorted array,
-        System.out.println(result);                                                              // if neative index then it does not exist in array
- System.out.println("-----------------------------");
-
-     Integer [] array = new Integer[]{1,2,3,7,16};
-     List<Integer> result1 = Arrays.asList(array);
-    System.out.println(result1);
- System.out.println("-----------------------------");
-        Integer [] array1 = new Integer[]{1,2,3,4,5};
-        Integer [] array2 = new Integer[]{1,2,3,4,5};
-        System.out.println(Arrays.compare(array1,array2)); // 0 they are same
-// with boolean                                                           //
-System.out.println(Arrays.equals(array1,array2));
-
-// we can copy the array and give to another array, new copy does not have anything to do with old array
-
-        Integer [] coppiedArray1 = Arrays.copyOf(array1,3);
-        System.out.println(Arrays.toString(coppiedArray1));
-
-        //sort array
-        Integer [] array5 = new Integer[]{7,2,10,4,5};
-        Arrays.sort(array5);
-        System.out.println(Arrays.toString(array5));
-
-
+//    int result = Arrays.binarySearch(new int[]{1,2,5,7,16},7); // best works with sorted array,
+//        System.out.println(result);                                                              // if neative index then it does not exist in array
+// System.out.println("-----------------------------");
+//
+//     Integer [] array = new Integer[]{1,2,3,7,16};
+//     List<Integer> result1 = Arrays.asList(array);
+//    System.out.println(result1);
+// System.out.println("-----------------------------");
+//        Integer [] array1 = new Integer[]{1,2,3,4,5};
+//        Integer [] array2 = new Integer[]{1,2,3,4,5};
+//        System.out.println(Arrays.compare(array1,array2)); // 0 they are same
+//// with boolean                                                           //
+//System.out.println(Arrays.equals(array1,array2));
+//
+//// we can copy the array and give to another array, new copy does not have anything to do with old array
+//
+//        Integer [] coppiedArray1 = Arrays.copyOf(array1,3);
+//        System.out.println(Arrays.toString(coppiedArray1));
+//
+//        //sort array
+//        Integer [] array5 = new Integer[]{7,2,10,4,5};
+//        Arrays.sort(array5);
+//        System.out.println(Arrays.toString(array5));
+//
+//
     }
 }
 

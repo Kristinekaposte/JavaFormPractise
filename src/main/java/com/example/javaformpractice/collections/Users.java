@@ -1,6 +1,4 @@
 package com.example.javaformpractice.collections;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Users  implements Comparable<Users>{
@@ -84,7 +82,7 @@ System.out.println("______________________After Buying something________________
 
 System.out.println("________________________Sorting_____________________________");
 //SORT USERS BY NAME
-       // Collections.sort(myUsers);
+      //  Collections.sort(myUsers);
 //SORT USERS BY BALANCE LOW-HIGH(ASC)
       //  Collections.sort(myUsers,Comparator.comparingDouble(Users::getBalance));
 //SORT BY ONE WHO HAS BOUGHT THE MOST

@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a620d5-4c00-4cd6-983a-4f164a7b35a9" name="Changes" comment="6th commit">
+    <list default="true" id="27a620d5-4c00-4cd6-983a-4f164a7b35a9" name="Changes" comment="6th commit updates just format and reverse order">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/UserDataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/UserDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/CollectionsExamples2Dec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/GenericMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/MetalBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/User2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/Generics2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/SuperAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/UpperBoundedWildCards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/generics/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/inputOutput/ByteStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/inputOutput/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/inputOutput/files/user.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/inputOutput/files/userData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/inputOutput/files/userData_Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/inputOutput/files/user_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/javaformpractice/user-data.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaformpractice/collections/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +38,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,14 +58,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kristine/Desktop/BootCampJava/JavaFormPractice/src/main/resources/com/example/javaformpractice/knight-strike.fxml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Kristine/Desktop/BootCampJava/JavaFormPractice/src/main/resources/com/example/javaformpractice/knight-strike.fxml",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.javaformpractice" />
@@ -53,13 +76,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Users">
-    <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.Car" />
+  <component name="RunManager" selected="Application.com.example.javaformpractice.UserDataApplication">
+    <configuration name="UpperBoundedWildCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.generics.UpperBoundedWildCards" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.generics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.CollectionExamples" />
+    <configuration name="UserProfile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.generics.UserProfile" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.generics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsMaps2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.CollectionsMaps2" />
+    <configuration name="com.example.javaformpractice.UserDataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.UserDataApplication" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.User" />
+    <configuration name="com.example.javaformpractice.inputOutput.ByteStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.inputOutput.ByteStream" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Users" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.collections.Users" />
+    <configuration name="com.example.javaformpractice.inputOutput.UserData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.javaformpractice.inputOutput.UserData" />
       <module name="JavaFormPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.javaformpractice.collections.*" />
+          <option name="PATTERN" value="com.example.javaformpractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Users" />
-        <item itemvalue="Application.CollectionExamples" />
-        <item itemvalue="Application.User" />
-        <item itemvalue="Application.CollectionsMaps2" />
-        <item itemvalue="Application.Car" />
+        <item itemvalue="Application.com.example.javaformpractice.UserDataApplication" />
+        <item itemvalue="Application.com.example.javaformpractice.inputOutput.UserData" />
+        <item itemvalue="Application.com.example.javaformpractice.inputOutput.ByteStream" />
+        <item itemvalue="Application.UpperBoundedWildCards" />
+        <item itemvalue="Application.UserProfile" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669991664192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="6th commit updates just format and reverse order">
+      <created>1669993370139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669993370139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +231,7 @@
     <MESSAGE value="4th commit" />
     <MESSAGE value="5th commit" />
     <MESSAGE value="6th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="6th commit" />
+    <MESSAGE value="6th commit updates just format and reverse order" />
+    <option name="LAST_COMMIT_MESSAGE" value="6th commit updates just format and reverse order" />
   </component>
 </project>
