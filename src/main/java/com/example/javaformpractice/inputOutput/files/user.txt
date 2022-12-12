@@ -1,1 +1,6 @@
-hello world
+Blue Red
+Red
+Orange
+Green
+Black
+White

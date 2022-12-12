@@ -1,5 +1,5 @@
 USER BIO 
-Name: dd
-Age: dd
-Gender: dd
-Profession: dd
+Name: Alice
+Age: 18
+Gender: female
+Profession: teacher
